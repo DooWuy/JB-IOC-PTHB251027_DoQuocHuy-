@@ -21,3 +21,10 @@ spring:
 services:
   product-service:
     url: ${PRODUCT_SERVICE_URL:http://localhost:8081}
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
